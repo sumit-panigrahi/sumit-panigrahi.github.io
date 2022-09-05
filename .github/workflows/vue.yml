@@ -1,0 +1,31 @@
+name: Vite-Vue-3-CI
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+      - name: Install
+        run: ./.github/scripts/install.sh
+        shell: bash
+      - name: Pre-publish
+        run: ./.github/scripts/pre-publish.sh
+        shell: bash
+      - name: Build
+        run: ./.github/scripts/build.sh
+        shell: bash
+      - name: Publish
+        run: ./.github/scripts/publish.sh
+        shell: bash
+      - name: Post-publish
+        run: ./.github/scripts/post-publish.sh
+        shell: bash
