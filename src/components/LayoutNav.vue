@@ -23,6 +23,7 @@ const navItems: Ref<Array<navItem>> = ref([
 <style scoped lang="scss">
 nav {
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  width: 100%;
 }
 </style>

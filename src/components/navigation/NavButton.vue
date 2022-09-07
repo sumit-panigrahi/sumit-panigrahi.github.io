@@ -16,15 +16,13 @@ a {
   display: block;
   text-decoration: none;
   color: white;
-  background-color: black;
-  width: max-content;
-  padding: 1rem;
+  width: 100%;
+  padding: 1rem 0;
   border: none;
-  border-radius: 0.5rem;
-  
+  text-align: center;
   &:hover {
     color: aqua;
-    background-color: grey;
+    background-color: black;
     cursor: pointer;
   }
 }

@@ -1,11 +1,10 @@
 <template>
-  <h1>Profile</h1>
+  <section>
+
+  </section>
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-h1 {
-  color: black;
-}
 </style>
